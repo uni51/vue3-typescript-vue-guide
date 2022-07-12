@@ -8,14 +8,15 @@ type Tweet = {
 
 type Props = {
 	tweets: Tweet[]
+	deleteTweet: (id: number) => void
 }
 
 defineProps<Props>()
 
-const emit = defineEmits(['delete-tweet'])
-const deleteTweet = (id: number) => {
-	emit('delete-tweet', id)
-}
+// const emit = defineEmits(['delete-tweet'])
+// const deleteTweet = (id: number) => {
+// 	emit('delete-tweet', id)
+// }
 </script>
 
 <template>
